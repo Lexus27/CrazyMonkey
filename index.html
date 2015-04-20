@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang='ru'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="css/reset.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body ontouchstart=""> 
+
+  <div class="spinner-bg"></div>
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+  
+  <div class="game" id="content">
+    <img src="images/bg.jpg" class="bg">
+    <img src="images/bg.svg" class="game-bg">
+    <div class="work-content" id="reels">
+      <div id="results">
+        <div id="score">
+          <span id="multiplier">0</span> x <img src="images/icons/icon8.png">
+        </div>
+        <div id="status"></div>
+      </div>
+      <div class="lines" id="reel1">
+        <img src="images/icons/icon1.png">
+        <img src="images/icons/icon2.png">
+        <img src="images/icons/icon3.png">
+      </div>
+      <div class="lines" id="reel2">
+        <img src="images/icons/icon4.png">
+        <img src="images/icons/icon5.png">
+        <img src="images/icons/icon6.png">
+      </div>
+      <div class="lines" id="reel3">
+        <img src="images/icons/icon7.png">
+        <img src="images/icons/icon1.png">
+        <img src="images/icons/icon2.png">
+      </div>
+      <div class="lines" id="reel4">
+        <img src="images/icons/icon4.png">
+        <img src="images/icons/icon7.png">
+        <img src="images/icons/icon2.png">
+      </div>
+      <div class="lines last-child" id="reel5">
+        <img src="images/icons/icon3.png">
+        <img src="images/icons/icon4.png">
+        <img src="images/icons/icon5.png">
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="nav" id="buttons">
+      <a href="#" class="select-game" id="select_game">
+        <img src="images/btns/select1.svg" class="normal">
+        <img src="images/btns/select2.svg" class="hover">
+        <img src="images/btns/select3.svg" class="active"></a>
+      </a>
+      <a href="#" class="help" id="help">
+        <img src="images/btns/help1.svg" class="normal">
+        <img src="images/btns/help2.svg" class="hover">
+        <img src="images/btns/help3.svg" class="active"></a>
+      </a>
+      <a href="#" class="line1" id="one_line">
+        <img src="images/btns/line1_1.svg" class="normal">
+        <img src="images/btns/line1_2.svg" class="hover">
+        <img src="images/btns/line1_3.svg" class="active"></a>
+      </a>
+      <a href="#" class="line3" id="three_line">
+        <img src="images/btns/line3_1.svg" class="normal">
+        <img src="images/btns/line3_2.svg" class="hover">
+        <img src="images/btns/line3_3.svg" class="active"></a>
+      </a>
+      <a href="#" class="line5" id="five_line">
+        <img src="images/btns/line5_1.svg" class="normal">
+        <img src="images/btns/line5_2.svg" class="hover">
+        <img src="images/btns/line5_3.svg" class="active"></a>
+      </a>
+      <a href="#" class="line7" id="seven_line">
+        <img src="images/btns/line7_1.svg" class="normal">
+        <img src="images/btns/line7_2.svg" class="hover">
+        <img src="images/btns/line7_3.svg" class="active"></a>
+      </a>
+      <a href="#" class="line9" id="nine_line">
+        <img src="images/btns/line9_1.svg" class="normal">
+        <img src="images/btns/line9_2.svg" class="hover">
+        <img src="images/btns/line9_3.svg" class="active"></a>
+      </a>
+      <a href="#" class="maxbet" id="max_bet">
+        <img src="images/btns/max1.svg" class="normal">
+        <img src="images/btns/max2.svg" class="hover">
+        <img src="images/btns/max3.svg" class="active"></a>
+      </a>
+      <a href="#" class="bet" id="bet">
+        <img src="images/btns/bet1.svg" class="normal">
+        <img src="images/btns/bet2.svg" class="hover">
+        <img src="images/btns/bet3.svg" class="active"></a>
+      </a>
+      <a href="#" class="start-skip" id="start_skip_take_win">
+        <img src="images/btns/skip1.svg" class="normal">
+        <img src="images/btns/skip2.svg" class="hover">
+        <img src="images/btns/skip3.svg" class="active"></a>
+      </a>
+      <a href="#" class="auto-play" id="play">
+        <img src="images/auto-play2.svg" class="normal">
+        <img src="images/auto-play.svg" class="hover">
+        <img src="images/auto-play3.svg" class="active"></a>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script src="js/js.js"></script>
+
+</body>
+</html>

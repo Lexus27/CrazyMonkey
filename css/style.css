@@ -1,0 +1,76 @@
+html {width: 100%; height: 100%;}
+
+body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width: 100%;}
+
+.clear {clear: both;width: 0px;height: 0px;overflow: hidden;font-size: 0px;line-height: 0px;}
+
+.game {height: 100%; margin: 0 auto; position: relative;}
+.game .game-bg {position: absolute; height: 100%; width: auto; z-index: -1;}
+.game .bg {position: absolute; height: 100%; width: auto; z-index: -2;}
+.game .big-balka3 {position: absolute; height: 100%;}
+.game .nav {position: absolute; bottom: 0; width: 100%; left: 0;}
+.game .nav a {float: left; position: relative;}
+.game .nav a .normal {display: block;}
+.game .nav a .hover {display: none;}
+.game .nav a .active {display: none;}
+.game .nav a:hover .normal {display: none;}
+.game .nav a:hover .hover {display: block;}
+.game .nav a:hover .active {display: none;}
+.game .nav a:active .normal {display: none;}
+.game .nav a:active .hover {display: none;}
+.game .nav a:active .active {display: block;}
+.game .nav a img {max-width: 100%;}
+.game .nav .select-game {width: 13.6%;}
+.game .nav .select-game img {float: right; width: 80%;}
+.game .nav .select-game:hover img {margin: 0px 0px 0 0px}
+.game .nav .help {width: 10.6%; margin-right: 1%;}
+.game .nav .line1 {width: 7%;}
+.game .nav .line3 {width: 7%;}
+.game .nav .line5 {width: 7%;}
+.game .nav .line7 {width: 7%;}
+.game .nav .line7 img {width: 94%;}
+.game .nav .line9 {width: 7%;}
+.game .nav .line9 img {width: 94%;}
+.game .nav .maxbet {width: 7%; margin-left: 1%;}
+.game .nav .maxbet img {width: 99%;}
+.game .nav .bet {width: 7%; margin-right: 1%;}
+.game .nav .bet img {width: 100%;}
+.game .nav .start-skip {width: 10.6%; margin-right: -1%;}
+.game .nav .start-skip img {float: right; width: 100%;}
+.game .nav .auto-play {width: 10.6%;}
+.game .nav .auto-play img {float: left; width: 100%;}
+
+.game .work-content {position: absolute; top: 14%; left: 10%; width: 80%; height: 54%;}
+.game .work-content .lines {float: left; width: 16%; height: 100%; margin-right: 5%; text-align: center;}
+.game .work-content .lines.last-child {margin-right: 0%;}
+.game .work-content .lines img {height: 25%; display: inline-block; margin-bottom: 25%;}
+
+#results {display: none; background: white; border: 3px solid gold; height: 120px; width: 250px; left: 20px; top: 15px; position: absolute; font-size: x-large;}
+#results #score {margin: 5px;}
+#results #score img {vertical-align: middle;}
+
+.spinner-bg {position: fixed; width: 100%; height: 100%; background: #fff; top: 0; left: 0; z-index: 100000;}
+.spinner {width: 40px; height: 40px; position: fixed; text-align: center; margin: auto; top: 0; right: 0; bottom: 0; left: 0; z-index: 100001;
+  -webkit-animation: rotate 2.0s infinite linear;
+  animation: rotate 2.0s infinite linear;
+}
+.dot1, .dot2 {width: 60%; height: 60%; display: inline-block; position: absolute; top: 0; background-color: #333; border-radius: 100%;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+.dot2 {top: auto; bottom: 0px; -webkit-animation-delay: -1.0s; animation-delay: -1.0s;}
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
