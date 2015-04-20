@@ -45,6 +45,64 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .game .work-content .lines.last-child {margin-right: 0%;}
 .game .work-content .lines img {height: 25%; display: inline-block; margin-bottom: 25%;}
 
+.text-fields {font-family: 'HoboStd', sans-serif; color: #ffd000; position: absolute; width: 100%; height: 100%;}
+.text-fields .total-bet {font-size: 3vh; text-transform: uppercase; margin: 3.5% 0 0 10%; position: absolute;}
+.text-fields .line-play {font-size: 3vh; text-transform: uppercase; margin: 3.5% 0 0 38%; position: absolute;}
+.text-fields .credits {font-size: 3vh; text-transform: uppercase; margin: 3.5% 0 0 65.6%; position: absolute;}
+.text-fields .bet-per-line {font-size: 1.5vh; text-transform: uppercase; margin: auto; position: absolute; width: 11%; left: 0; right: 0; top: 10.4%;}
+.text-fields .bet-per-line .position {float: right;}
+.text-fields .bonus-game {font-size: 4vh; text-transform: uppercase; margin: 3.5% 0 0 59.6%; position: absolute; bottom: 21%;}
+
+.work-lines {font-family: 'HoboStd', sans-serif; color: #ffd000; position: absolute; width: 100%; height: 100%; font-size: 3vh;}
+.work-lines .left {position: absolute; left: 0; top: 0; display: inline-block;}
+.work-lines .right {position: absolute; right: 0; top: 0; display: inline-block;}
+.work-lines img {width: 80.5%; position: absolute; z-index: 1;}
+.work-lines .line1 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-1 .line1 {display: block;}
+.work-lines .line1 .left {margin: 29.5% 0 0 5%;}
+.work-lines .line1 .right {margin: 29.5% 5% 0 0;}
+.work-lines .line1 img {margin: 30.5% 0 0 10%;}
+.work-lines .line2 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-2 .line2 {display: block;}
+.work-lines .line2 .left {margin: 10.5% 0 0 5%;}
+.work-lines .line2 .right {margin: 10.5% 5% 0 0;}
+.work-lines .line2 img {margin: 11.5% 0 0 10%;}
+.work-lines .line3 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-3 .line3 {display: block;}
+.work-lines .line3 .left {margin: 48.6% 0 0 5%;}
+.work-lines .line3 .right {margin: 48.6% 5% 0 0;}
+.work-lines .line3 img {margin: 49.4% 0 0 10%;}
+.work-lines .line4 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-4 .line4 {display: block;}
+.work-lines .line4 .left {margin: 20.3% 0 0 5%;}
+.work-lines .line4 .right {margin: 20.3% 5% 0 0;}
+.work-lines .line4 img {margin: 21.4% 0 0 10%;}
+.work-lines .line5 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-5 .line5 {display: block;}
+.work-lines .line5 .left {margin: 38.7% 0 0 5%;}
+.work-lines .line5 .right {margin: 38.7% 5% 0 0;}
+.work-lines .line5 img {margin: 16.7% 0 0 10%;}
+.work-lines .line6 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-6 .line6 {display: block;}
+.work-lines .line6 .left {margin: 15.7% 0 0 5%;}
+.work-lines .line6 .right {margin: 15.7% 5% 0 0;}
+.work-lines .line6 img {margin: 16.1% 0 0 10%;}
+.work-lines .line7 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-7 .line7 {display: block;}
+.work-lines .line7 .left {margin: 43.5% 0 0 5%;}
+.work-lines .line7 .right {margin: 43.5% 5% 0 0;}
+.work-lines .line7 img {margin: 36.1% 0 0 10%;}
+.work-lines .line8 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-8 .line8 {display: block;}
+.work-lines .line8 .left {margin: 34.1% 0 0 5%;}
+.work-lines .line8 .right {margin: 34.1% 5% 0 0;}
+.work-lines .line8 img {margin: 35.2% 0 0 10%;}
+.work-lines .line9 {position: absolute; width: 100%; height: 100%; display: none;}
+.work-lines-show-9 .line9 {display: block;}
+.work-lines .line9 .left {margin: 24.9% 0 0 5%;}
+.work-lines .line9 .right {margin: 24.9% 5% 0 0;}
+.work-lines .line9 img {margin: 19.6% 0 0 10%;}
+
 #results {display: none; background: white; border: 3px solid gold; height: 120px; width: 250px; left: 20px; top: 15px; position: absolute; font-size: x-large;}
 #results #score {margin: 5px;}
 #results #score img {vertical-align: middle;}
