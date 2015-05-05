@@ -25,11 +25,11 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .game .nav .select-game:hover img {margin: 0px 0px 0 0px}
 .game .nav .help {width: 10.6%; margin-right: 1%;}
 .game .nav .line1 {width: 7%;}
-.game .nav .line3 {width: 7%;}
-.game .nav .line5 {width: 7%;}
-.game .nav .line7 {width: 7%;}
+.game .nav .line3 {width: 6.9%;}
+.game .nav .line5 {width: 6.65%;}
+.game .nav .line7 {width: 6.9%;}
 .game .nav .line7 img {width: 94%;}
-.game .nav .line9 {width: 7%;}
+.game .nav .line9 {width: 6.8%;}
 .game .nav .line9 img {width: 94%;}
 .game .nav .maxbet {width: 7%; margin-left: 1%;}
 .game .nav .maxbet img {width: 99%;}
