@@ -19,7 +19,7 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .game .nav a:active .normal {display: none;}
 .game .nav a:active .hover {display: none;}
 .game .nav a:active .active {display: block;}
-.game .nav a img {max-width: 100%;}
+.game .nav a img {width: 100%;}
 .game .nav .select-game {width: 13.6%;}
 .game .nav .select-game img {float: right; width: 80%;}
 .game .nav .select-game:hover img {margin: 0px 0px 0 0px}
@@ -33,7 +33,7 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .game .nav .line9 img {width: 94%;}
 .game .nav .maxbet {width: 7%; margin-left: 1%;}
 .game .nav .maxbet img {width: 99%;}
-.game .nav .bet {width: 7%; margin-right: 1%;}
+.game .nav .bet {width: 7.3%; margin-right: 1%;}
 .game .nav .bet img {width: 100%;}
 .game .nav .start-skip {width: 10.6%; margin-right: -1%;}
 .game .nav .start-skip img {float: right; width: 100%;}
