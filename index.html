@@ -280,14 +280,15 @@
   							type: 'POST',
   							url: 'http://ysvyato.bget.ru/game/crazy_monkey/barrelThrow',
   							data: {
-  								bet: 1,
-  								bet_lines: 9
+  								bet: bet_per_line,
+  								bet_lines: active_line
   							},
   							success: function (data, status) {
   								slot.stop(function(barrelIndex){
-									setCredits(data.object.balance);
   									return data.object.matrix[barrelIndex];
   								},null,window);
+								console.log(data.object);
+								setCredits(data.object.balance);
   							},
   							async: true
   						});
@@ -340,9 +341,9 @@
 
 	function setCredits (credits) {
 		document.getElementById('credits-value').innerHTML = credits;
-		//bet_per_line = 1;
-		//active_line = 1;
-		//refreshData();
+		bet_per_line = 1;
+		active_line = 1;
+		refreshData();
 	}
 
 	function refreshData () {
