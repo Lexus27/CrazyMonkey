@@ -121,6 +121,7 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .work-lines .line7 .left {margin: 43.5% 0 0 5%;}
 .work-lines .line7 .right {margin: 43.5% 5% 0 0;}
 .work-lines .line7 img {margin: 36.1% 0 0 10%;}
+.work-lines-show-7-1 .line7 img {margin: 32.5% 0 0 10%;}
 .work-lines .line8 {position: absolute; width: 100%; height: 100%; display: none;}
 .work-lines-show-8 .line8 {display: block;}
 .work-lines-show-8 .line8 .normal {display: block;}
