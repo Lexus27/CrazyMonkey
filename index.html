@@ -27,7 +27,7 @@
       <div class="bet-per-line"><span class="text">bet per line</span>1<span id="bet-per-line-value" class="position">1</span></div>
       <div class="bonus-game">bonus game</div>
     </div>
-    <div class="work-lines">
+    <div id="work-lines" class="work-lines work-lines-show-1">
       <div class="line2">
         <span class="left">2</span>
         <img src="images/lines/2.png" class="normal">
@@ -249,21 +249,33 @@
 
   						stoppingTick:       null,
   						stoppingFirstTick:  null,
-  						stoppingDistance :  function(){
+						stoppingDistance :  function(){
 
-  							if(this.flag('stopRollback')){
-  								this.reel.forceStop();
-  								return false;
-  							}
+							if(this.flag('stopRollback') && this.counter('stopOrderComplete') < 1){
+						    	console.log(this.reel.getIndex(),this.reel.order.getRange(0,3),this.counter('stopOrderComplete'));
+						        this.reel.forceStop();
+						        return false;
+							}
 
-  							if(!this.reel.shiftStoppingOrder()){
-  								this.changeSpeed(1,200,function(){
-  									this.speed = this._speed * 0.5;
-  									this.back = true;
-  									this.flag('stopRollback',true);
-  								});
-  							}
-  						}
+						    if(this.flag('stopOrderComplete')){
+						    	if(this.back){
+						        	this.counterDecrement('stopOrderComplete');
+						        } else {
+						        	this.counterIncrement('stopOrderComplete');
+						        }
+							}
+
+						    if(!this.flag('stopOrderComplete') && !this.reel.shiftStoppingOrder()){
+
+						    	this.flag('stopOrderComplete',true);
+						        this.changeSpeed(1,400,function(){
+						        	this.speed = this._speed * 0.5;
+						        	this.back = true;
+						         	this.flag('stopRollback',true);
+						        });
+							}
+						}
+  						
   					};
 
   				};
@@ -337,30 +349,50 @@
 		
 				var line1Btn = document.getElementById('one_line');
 				line1Btn.addEventListener('click',function(){
+					var lines = document.getElementById("work-lines");
+					lines.className = "";
+					lines.className = "work-lines";
+					lines.className += " work-lines-show-1";
 					active_line = 1;
 					refreshData();
 				},false);
 		
 				var line3Btn = document.getElementById('three_line');
 				line3Btn.addEventListener('click',function(){
+					var lines = document.getElementById("work-lines");
+					lines.className = "";
+					lines.className = "work-lines";
+					lines.className += " work-lines-show-1 work-lines-show-2 work-lines-show-3";
 					active_line = 3;
 					refreshData();
 				},false);
 		
 				var line5Btn = document.getElementById('five_line');
 				line5Btn.addEventListener('click',function(){
+					var lines = document.getElementById("work-lines");
+					lines.className = "";
+					lines.className = "work-lines";
+					lines.className += " work-lines-show-1 work-lines-show-2 work-lines-show-3 work-lines-show-4 work-lines-show-5";
 					active_line = 5;
 					refreshData();
 				},false);
 		
 				var line7Btn = document.getElementById('seven_line');
 				line7Btn.addEventListener('click',function(){
+					var lines = document.getElementById("work-lines");
+					lines.className = "";
+					lines.className = "work-lines";
+					lines.className += " work-lines-show-1 work-lines-show-2 work-lines-show-3 work-lines-show-4 work-lines-show-5 work-lines-show-6 work-lines-show-7";
 					active_line = 7;
 					refreshData();
 				},false);
 		
 				var line9Btn = document.getElementById('nine_line');
 				line9Btn.addEventListener('click',function(){
+					var lines = document.getElementById("work-lines");
+					lines.className = "";
+					lines.className = "work-lines";
+					lines.className += " work-lines-show-1 work-lines-show-2 work-lines-show-3 work-lines-show-4 work-lines-show-5 work-lines-show-6 work-lines-show-7 					work-lines-show-8 work-lines-show-9";
 					active_line = 9;
 					refreshData();
 				},false);
@@ -373,8 +405,8 @@
 
 	function setCredits (credits) {
 		document.getElementById('credits-value').innerHTML = credits;
-		bet_per_line = 1;
-		active_line = 1;
+		//bet_per_line = 1;
+		//active_line = 1;
 		refreshData();
 	}
 

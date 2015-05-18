@@ -336,7 +336,8 @@ Mirage.Slot.Reel.Animation.prototype = {
 	 * @param reset
 	 */
 	counter: function(name,on,reset){
-		on = on || false;
+		on = on || 0;
+		reset = true === reset;
 		if(reset){
 			this.counters[name] = 0;
 		}
@@ -345,7 +346,7 @@ Mirage.Slot.Reel.Animation.prototype = {
 		}else if(on < 0){
 			this.counterDecrement(name,-on);
 		}
-		return this._counterCheck(name,false)?0:this.counters[name];
+		return !this._counterCheck(name,false)?0:this.counters[name];
 	},
 
 	/**
@@ -353,8 +354,11 @@ Mirage.Slot.Reel.Animation.prototype = {
 	 * @param on
 	 */
 	counterIncrement: function(name,on){
-		this._counterCheck(name);
-		this.counters[name]-=on;
+		on = on===undefined?1:on;
+		if(typeof this.counters[name] !== 'number'){
+			this.counters[name] = 0;
+		}
+		this.counters[name]+=on;
 		return this.counters[name];
 	},
 
@@ -364,22 +368,22 @@ Mirage.Slot.Reel.Animation.prototype = {
 	 * @returns {*}
 	 */
 	counterDecrement: function(name,on){
-		this._counterCheck(name);
-		this.counters[name]+=on;
+		on = on===undefined?1:on;
+		if(typeof this.counters[name] !== 'number'){
+			this.counters[name] = 0;
+		}
+		this.counters[name]-=on;
 		return this.counters[name];
 	},
 
 	/**
 	 * @param name
-	 * @param autoCreate
 	 * @returns {boolean}
 	 * @private
 	 */
-	_counterCheck: function(name,autoCreate){
-		autoCreate = autoCreate !== false;
-		if(!this.counters.hasOwnProperty(name)){
-			if(autoCreate)this.counters[name] = 0;
-			return autoCreate;
+	_counterCheck: function(name){
+		if(typeof this.counters[name] !== 'number'){
+			this.counters[name] = 0;
 		}return true;
 	},
 
