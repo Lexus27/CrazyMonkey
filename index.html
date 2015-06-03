@@ -19,78 +19,163 @@
   
   <div class="game" id="content">
     <img src="images/bg.jpg" class="bg">
-    <img src="images/bg.svg" class="game-bg">
-    <div class="text-fields">
-      <div class="total-bet">total bet <span id="total-bet-value" class="right">1</span></div>
-      <div class="line-play">line play <span id="line-play-value" class="right">1</span></div>
-      <div class="credits">credits <span id="credits-value" class="right">100</span></div>
-      <div class="bet-per-line"><span class="text">bet per line</span>1<span id="bet-per-line-value" class="position">1</span></div>
-      <div class="bonus-game">bonus game</div>
+    <div class="main-game-block">
+      <img src="images/bg.svg" class="game-bg">
+      <div class="text-fields">
+        <div class="total-bet">total bet <span id="total-bet-value" class="right">1</span></div>
+        <div class="line-play">line play <span id="line-play-value" class="right">1</span></div>
+        <div class="credits">credits <span id="credits-value" class="right">100</span></div>
+        <div class="bet-per-line"><span class="text">bet per line</span>1<span id="bet-per-line-value" class="position">1</span></div>
+        <div class="bonus-game">bonus game</div>
+      </div>
+      <div id="work-lines" class="work-lines work-lines-show-1">
+        <div class="line2">
+          <span class="left">2</span>
+          <img src="images/lines/2.png" class="normal">
+          <img src="images/lines/2_1.png" class="glow">
+          <span class="right">2</span>
+        </div>
+        <div class="line6">
+          <span class="left">6</span>
+          <img src="images/lines/6.png" class="normal">
+          <img src="images/lines/6_1.png" class="glow">
+          <span class="right">6</span>
+        </div>
+        <div class="line4">
+          <span class="left">4</span>
+          <img src="images/lines/4.png" class="normal">
+          <img src="images/lines/4_1.png" class="glow">
+          <span class="right">4</span>
+        </div>
+        <div class="line9">
+          <span class="left">9</span>
+          <img src="images/lines/9.png" class="normal">
+          <img src="images/lines/9_1.png" class="glow">
+          <span class="right">9</span>
+        </div>
+        <div class="line1">
+          <span class="left">1</span>
+          <img src="images/lines/1.png" class="normal">
+          <img src="images/lines/1_1.png" class="glow">
+          <span class="right">1</span>
+        </div>
+        <div class="line8">
+          <span class="left">8</span>
+          <img src="images/lines/8.png" class="normal">
+          <img src="images/lines/8_1.png" class="glow">
+          <span class="right">8</span>
+        </div>
+        <div class="line5">
+          <span class="left">5</span>
+          <img src="images/lines/5.png" class="normal">
+          <img src="images/lines/5_1.png" class="glow">
+          <span class="right">5</span>
+        </div>
+        <div class="line7">
+          <span class="left">7</span>
+          <img src="images/lines/7.png" class="normal">
+          <img src="images/lines/7_1.png" class="glow">
+          <span class="right">7</span>
+        </div>
+        <div class="line3">
+          <span class="left">3</span>
+          <img src="images/lines/3.png" class="normal">
+          <img src="images/lines/3_1.png" class="glow">
+          <span class="right">3</span>
+        </div>
+      </div>
+      <div class="work-content" id="reels">
+  		<canvas class="lines" id="reel1"></canvas>
+  		<canvas class="lines" id="reel2"></canvas>
+  		<canvas class="lines" id="reel3"></canvas>
+  		<canvas class="lines" id="reel4"></canvas>
+  		<canvas class="lines last-child" id="reel5"></canvas>
+        <div class="clear"></div>
+      </div>
     </div>
-    <div id="work-lines" class="work-lines work-lines-show-1">
-      <div class="line2">
-        <span class="left">2</span>
-        <img src="images/lines/2.png" class="normal">
-        <img src="images/lines/2_1.png" class="glow">
-        <span class="right">2</span>
+    <div class="risk-game-block">
+      <div class="bottom-bg"><img src="images/risk/bottom-bg.png"></div>
+      <div class="risk-monkey"><img src="images/risk/anim/1.png"></div>
+
+      <div class="risk-game-1">
+        <div class="top-panel">
+          <div class="l1"><span>input win</span><p>30</p></div>
+          <div class="l2"><span>prize win</span><p>30</p></div>
+          <div class="l3"><span>credit</span><p>999</p></div>
+        </div>
+        <div class="top-panel2">
+          <div class="l1"><span>risk step</span><p>1</p></div>
+        </div>
+
+        <div class="cards-panel">
+          <div class="card">
+            <div class="btn-dealer"></div>
+            <div class="btn-pick"></div>
+            <img src="images/risk/card.png">
+          </div>
+          <div class="card">
+            <div class="btn-dealer"></div>
+            <div class="btn-pick"></div>
+            <img src="images/risk/card.png">
+          </div>
+          <div class="card">
+            <div class="btn-dealer"></div>
+            <div class="btn-pick"></div>
+            <img src="images/risk/card.png">
+          </div>
+          <div class="card">
+            <div class="btn-dealer"></div>
+            <div class="btn-pick"></div>
+            <img src="images/risk/card.png">
+          </div>
+          <div class="card">
+            <div class="btn-dealer"></div>
+            <div class="btn-pick"></div>
+            <img src="images/risk/card.png">
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="risk-monkey"></div>
+
+        <div class="bottom-panel">
+          <div class="l1"><span>take or risk...</span><p></p></div>
+        </div>
       </div>
-      <div class="line6">
-        <span class="left">6</span>
-        <img src="images/lines/6.png" class="normal">
-        <img src="images/lines/6_1.png" class="glow">
-        <span class="right">6</span>
+
+      <div class="risk-game-2">
+        <div class="big-top-panel">
+          <div class="l1">find a prize</div>
+        </div>
+        <div class="bonus-block1">
+          <div>press <span>3 line</span><br> to select</div>
+          <img src="images/risk/block.png">
+        </div>
+        <div class="bonus-block2">
+          <div>press <span>7 line</span><br> to select</div>
+          <img src="images/risk/block.png">
+        </div>
       </div>
-      <div class="line4">
-        <span class="left">4</span>
-        <img src="images/lines/4.png" class="normal">
-        <img src="images/lines/4_1.png" class="glow">
-        <span class="right">4</span>
+
+      <div class="risk-game-3">
+        <div class="top-panel">
+          <div class="l1"><span>input win</span><p>30</p></div>
+          <div class="l2"><span>prize win</span><p>30</p></div>
+          <div class="l3"><span>credit</span><p>999</p></div>
+        </div>
+
+        <div class="lians">
+          <div class="lian"><img src="images/risk/lian.png"></div>
+          <div class="lian"><img src="images/risk/lian.png"></div>
+          <div class="lian"><img src="images/risk/lian.png"></div>
+          <div class="lian lian-bottom"><img src="images/risk/lian.png"></div>
+          <div class="lian"><img src="images/risk/lian.png"></div>
+          <div class="clear"></div>
+        </div>
       </div>
-      <div class="line9">
-        <span class="left">9</span>
-        <img src="images/lines/9.png" class="normal">
-        <img src="images/lines/9_1.png" class="glow">
-        <span class="right">9</span>
-      </div>
-      <div class="line1">
-        <span class="left">1</span>
-        <img src="images/lines/1.png" class="normal">
-        <img src="images/lines/1_1.png" class="glow">
-        <span class="right">1</span>
-      </div>
-      <div class="line8">
-        <span class="left">8</span>
-        <img src="images/lines/8.png" class="normal">
-        <img src="images/lines/8_1.png" class="glow">
-        <span class="right">8</span>
-      </div>
-      <div class="line5">
-        <span class="left">5</span>
-        <img src="images/lines/5.png" class="normal">
-        <img src="images/lines/5_1.png" class="glow">
-        <span class="right">5</span>
-      </div>
-      <div class="line7">
-        <span class="left">7</span>
-        <img src="images/lines/7.png" class="normal">
-        <img src="images/lines/7_1.png" class="glow">
-        <span class="right">7</span>
-      </div>
-      <div class="line3">
-        <span class="left">3</span>
-        <img src="images/lines/3.png" class="normal">
-        <img src="images/lines/3_1.png" class="glow">
-        <span class="right">3</span>
-      </div>
+
     </div>
-    <div class="work-content" id="reels">
-		<canvas class="lines" id="reel1"></canvas>
-		<canvas class="lines" id="reel2"></canvas>
-		<canvas class="lines" id="reel3"></canvas>
-		<canvas class="lines" id="reel4"></canvas>
-		<canvas class="lines last-child" id="reel5"></canvas>
-      <div class="clear"></div>
-    </div>
+
     <div class="nav" id="buttons">
       <a href="#" class="select-game" id="select_game">
         <img src="images/btns/select1.svg" class="normal">
@@ -157,7 +242,7 @@
         <img src="images/btns/btn1_2.svg" class="hover">
         <img src="images/btns/btn1_3.svg" class="active">
         <img src="images/btns/play_d.png" class="disabled">
-		  </a>
+      </a>
       <a href="#" class="risk" id="risk">
         <img src="images/btns/risk1.svg" class="normal">
         <img src="images/btns/risk2.svg" class="hover">
@@ -171,6 +256,8 @@
         <img src="images/btns/start_d.png" class="disabled">
       </a>
     </div>
+
+
   </div>
 
   <script src="js/jquery-1.7.1.min.js"></script>
