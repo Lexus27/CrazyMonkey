@@ -5,8 +5,8 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
 .clear {clear: both;width: 0px;height: 0px;overflow: hidden;font-size: 0px;line-height: 0px;}
 
 .game {height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
-.game .game-bg {position: absolute; height: 100%; width: auto; z-index: -1;}
-.game .bg {position: absolute; height: 100%; width: auto; z-index: -2;}
+.game .game-bg {position: absolute; width: 102%; z-index: -1; left: -1%; top: -6%;}
+.game .bg {position: absolute; width: auto; z-index: -2;}
 .game .big-balka3 {position: absolute; height: 100%;}
 .game .nav {position: absolute; bottom: 0; width: 102%; left: 0; background: url(../images/btns-bg.png); margin-left: -1%; padding-top: 2.2%; background-size: 100%;}
 .game .nav a {float: left; position: relative;}
@@ -196,8 +196,8 @@ body {font-size: 13px; font-family: "Open Sans", sans-serif; height: 100%; width
   }
 }
 
-.main-game-block {display: none;}
-.risk-game-block {display: block; position: absolute; width: 100%; height: 100%; overflow: hidden;}
+.main-game-block {display: block;}
+.risk-game-block {display: none; position: absolute; width: 100%; height: 100%; overflow: hidden;}
 
 .risk-game-block .bottom-bg {position: absolute; width: 110%; bottom: -5%; left: -5%;}
 .risk-game-block .bottom-bg img {max-width: 100%;}
